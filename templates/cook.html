@@ -1,0 +1,18 @@
+<html>
+
+<body>
+
+<h1>Find cook</h1>
+<h2>Total number of cook: {{Count}}</h2>
+
+{% for i in cook %}
+
+<div>
+<a href= '{{url_for('showMenu', cook_id= i.id)}}'>{{i.name}}</a>
+</div>
+
+
+{% endfor %}
+</body>
+
+</html>

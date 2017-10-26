@@ -1,0 +1,10 @@
+8/11
+to improve:
+1. able to choose multiple dishes and then total
+2. orderPayment page should show the cost
+3. there should be go back from menu to cook page
+
+to read:
+flask community
+flask snippets
+flask extension

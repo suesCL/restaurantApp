@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<form action= "{{url_for('orderPayment', cook_id = cook.id, menu_id = item.id)}}" method = 'POST'>
+<p>Meal: {{item.name}} from <b>{{cook.name}}</b></p>
+
+<p>Name:
+<input type = 'text' size='30' name = 'name'></p>
+
+<p>Deliverary Location:
+<input type = 'text' size='30' name = 'location'></p>
+
+<p>Delivary time:
+<input type = 'text' size='30' name = 'time'></p>
+
+<p>Credit Card Info:
+<input type = 'text' size='30' name = 'card'></p>
+
+<input type='submit' value='Submit Order'>
+</form>
+
+<a href= '{{url_for('showMenu', cook_id= cook.id)}}'>Cancel Order</a>
+</body>
+</html>

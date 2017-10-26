@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<h1>Order Confirmation:</h1>
+
+<p>Dear {{Customer.name}}:</p>
+
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+  <ul>
+    {% for message in messages %}
+      <li> <strong> {{ message }} </strong> </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+{% endwith %}
+
+<p>Your order of <b>{{item.name}}</b> from {{cook.name}} will be delivered at {{Customer.location}} at {{Customer.time}}</p>
+
+</body>
+</html>

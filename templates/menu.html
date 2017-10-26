@@ -1,0 +1,21 @@
+<html>
+
+<body>
+
+<h1>Menu : {{cook.name}}</h1>
+
+{% for i in Items %}
+
+<div>
+
+<a href= '{{url_for('orderPayment', cook_id= cook.id, menu_id = i.id)}}'>{{i.name}}</a>
+<p>{{i.description}}</p>
+<p>${{i.price}}</p>
+
+</div>
+
+
+{% endfor %}
+</body>
+
+</html>
